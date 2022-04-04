@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan FOR IN</title>
+</head>
+<body>
+    <h1>Perulangan FOR IN</h1>
+    <script>
+        var mobil = { merk: "Toyota Avanza",
+                      tipe: "MPV",
+                      harga: 200000000,
+                      warna: "merah",
+                      hidupkan: function () { return "Mesin Dihidupkan"; }
+                    };
+
+        var prop;
+        for (prop in mobil) {
+        console.log('Isi '+ prop +' = '+ mobil[prop]);
+        }
+    </script>
+    <h1>Perulangan for in Untuk Array</h1>
+    <script>
+        var siswa = ["Andri", "Joko", "Sukma", "Rina", "Sari"];
+
+        var key;
+        for (key in siswa) {
+        console.log('Element array siswa ke '+ key +' = '+ siswa[key]);
+        }
+    </script>
+</body>
+</html>
